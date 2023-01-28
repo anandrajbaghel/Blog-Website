@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    border: 1px dotted red;
+    background-color: aliceblue;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+/* 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    gap: 10px; */
+}
+#head
+{
+    border: 1px dotted green;
+}
+#love-message
+{
+    border: 1px dotted midnightblue;
+    background-color: rgb(198, 226, 251);
+    color: midnightblue;
+    font-weight: lighter;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100vmax;
+    text-align: center;
+    padding: 10px 0;
+}

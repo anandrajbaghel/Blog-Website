@@ -10,9 +10,8 @@ body{
     margin: 0;
     overflow: hidden;
 }
-
-@media (min-width: 568px)
-{
+/* 
+@media (min-width: 568px), (max-width: 320px){
     .error{
         position: relative;
         padding: 10px;
@@ -24,7 +23,7 @@ body{
     .arrow,.abstractDesign,.avatarHolder,.socialLinks,.hireMe,.anand{
         visibility: hidden;
     }
-}
+} */
 
 @media (min-width: 320px) and (max-width: 480px) and (min-height: 568px) and (max-height: 920px)
 {

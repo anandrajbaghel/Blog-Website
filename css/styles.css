@@ -4,11 +4,11 @@ calculate w.r.t. these values only
 */
 *{
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body{
     background-color: white;
     margin: 0;
-    overflow: hidden;
 }
 /* 
 @media (min-width: 568px), (max-width: 320px){
@@ -42,6 +42,7 @@ body{
     transform: rotate(0deg);
     /* border: 1px solid black; */
     z-index: 1;
+    overflow: hidden;
 }
 .abstractDesign{
     /* Abstract design */
@@ -63,7 +64,7 @@ body{
     height: 41.6vw;
     left: calc(50% - 41.6vw/2);
     bottom: calc(50% - 41.6vw/2 - 15vw);
-    background: url(/arb.github.io/css/anand.png);
+    background: url(/resorce/anand.png);
     background-size: cover;
     border-radius: 20.8vw;
     border: 1px solid white;

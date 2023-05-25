@@ -131,6 +131,7 @@ a{
     flex: none;
     order: 0;
     flex-grow: 0;
+    overflow: hidden;
     /* border: 1px solid black; */
 }
 .hireMe{

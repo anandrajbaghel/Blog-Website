@@ -63,7 +63,7 @@ body{
     height: 41.6vw;
     left: calc(50% - 41.6vw/2);
     bottom: calc(50% - 41.6vw/2 - 15vw);
-    background: url(/resorce/anand.png);
+    background: url(/arb.github.io/css/anand.png);
     background-size: cover;
     border-radius: 20.8vw;
     border: 1px solid white;

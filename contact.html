@@ -3,35 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Anand B.</title>
-    <link rel="stylesheet" href="style/style.css">
+    <meta name="description" content="Contact me">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-         <nav class="nav-links">
-             <a href="index.html">Home</a>
-            <a href="blog.html">Blog</a>
-            <a href="#">Contact</a>
-        </nav>
-        <h1 class="page-title">Contact Me</h1>
-        <div class="contact-form">
-            <form action="https://formspree.io/f/mpwwogel" method="POST">
-                <label>
-                    <input required type="text" name="name" placeholder="Your Name">
-                </label>
-                <label>
-                    <input required type="email" name="email" placeholder="Your Email">
-                </label>
-                <label>
-                    <textarea required name="message" placeholder="Your Message"></textarea>
-                </label>
-                <button type="submit">Send</button>
-            </form>
-            <div class="social-media">
-                <a href="https://github.com/anandrajbaghel" class="social-icon">GitHub</a>
-                 <a href="https://www.linkedin.com/in/anandrajbaghel/" class="social-icon">LinkedIn</a>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">/</a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p class="subtitle">Let's work together</p>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="contact-section">
+                        <div class="contact-info">
+                            <h2>Contact Information</h2>
+                            <p>Feel free to reach out through the form or connect with me on social media.</p>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>aanandrajbaghel@gmail.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Bharat</span>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <a href="https://github.com/anandrajbaghel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/aanandrajbaghel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <form class="contact-form" action="https://formspree.io/f/mpwwogel" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/anandrajbaghel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/anandrajbaghel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Site Map</h4>
+                    <div id="graph-container" class="graph-container"></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025. All rights reserved.</p>
             </div>
         </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/matrix.js"></script>
+    
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-button" data-theme="light" aria-label="Light mode">
+            <i class="fas fa-sun"></i>
+        </button>
+        <button class="theme-button" data-theme="dark" aria-label="Dark mode">
+            <i class="fas fa-circle-half-stroke"></i>
+        </button>
+        <button class="theme-button" data-theme="scifi" aria-label="Sci-fi mode">
+            <i class="fas fa-robot"></i>
+        </button>
+        <button class="theme-button" data-theme="system" aria-label="System mode">
+            <i class="fas fa-desktop"></i>
+        </button>
     </div>
 </body>
-</html>
+</html> 

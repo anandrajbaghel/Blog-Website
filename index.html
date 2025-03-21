@@ -3,17 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anand B.</title>
-    <link rel="stylesheet" href="style/style.css">
+    <meta name="description" content="Personal website">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="landing-text">Hello, I'm a Developer.</h1>
-        <nav class="nav-links">
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <canvas id="matrix-rain" class="matrix-rain"></canvas>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">/</a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1>Hello, I'm <span class="highlight">Anand Baghel</span></h1>
+                <p class="subtitle">Building digital experiences</p>
+                <div class="cta-buttons">
+                    <a href="projects.html" class="cta-button">View Projects</a>
+                    <a href="contact.html" class="cta-button secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="projects-section">
+                        <h2>Recent Projects</h2>
+                        <div class="projects-grid">
+                            <article class="project-card">
+                                <div class="project-content">
+                                    <h3>Robotic Arm</h3>
+                                    <p>Designing and implementing a robotic arm to lift and displace up to 100g of weight.</p>
+                                    <div class="tech-stack">
+                                        <span>C++</span>
+                                        <span>JavaScript</span>
+                                        <span>Arduino IDE</span>
+                                    </div>
+                                    <a href="https://github.com/anandrajbaghel/Robotic-Arm" class="read-more" target="_blank" rel="noopener noreferrer">View Project</a>
+                                </div>
+                            </article>
+                            <article class="project-card">
+                                <div class="project-content">
+                                    <h3>Trading Journal</h3>
+                                    <p>A comprehensive web application designed to empower traders through meticulous tracking and insightful analysis of their trading activity.</p>
+                                    <div class="tech-stack">
+                                        <span>ReactJS</span>
+                                    </div>
+                                    <a href="https://github.com/anandrajbaghel/Trading-Journal" class="read-more" target="_blank" rel="noopener noreferrer">View Project</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <aside class="sidebar">
+                        <div class="about-card">
+                            <h3>About Me</h3>
+                            <p>I create elegant solutions to complex problems.</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <h3>Connect</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/anandrajbaghel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/anandrajbaghel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/anandrajbaghel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/anandrajbaghel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Site Map</h4>
+                    <div id="graph-container" class="graph-container"></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/matrix.js"></script>
+    
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-button" data-theme="light" aria-label="Light mode">
+            <i class="fas fa-sun"></i>
+        </button>
+        <button class="theme-button" data-theme="dark" aria-label="Dark mode">
+            <i class="fas fa-circle-half-stroke"></i>
+        </button>
+        <button class="theme-button" data-theme="scifi" aria-label="Sci-fi mode">
+            <i class="fas fa-robot"></i>
+        </button>
+        <button class="theme-button" data-theme="system" aria-label="System mode">
+            <i class="fas fa-desktop"></i>
+        </button>
     </div>
-    <script src="script/script.js"></script>
 </body>
 </html>
